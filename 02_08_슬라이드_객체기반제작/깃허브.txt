@@ -1,0 +1,7 @@
+D:/국기과정_최제준/교육산출물/02월/02_03_와이어프레임6
+
+git config add origin https://github.com/chlwp11/wireframe2.git
+
+git config user.name "chlwp11"
+
+https://chlwp11.github.io/wireframe2/. 깃 허브 주소 

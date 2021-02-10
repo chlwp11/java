@@ -1,0 +1,172 @@
+업로드 할 폴더 선택 그리고 역슬래쉬를 슬래쉬로 변경
+D:/국기과정_최제준/교육산출물/02월/02_01
+
+-----------------------------------------
+깃배쉬에서 경로변경
+
+$ cd D:/국기과정_최제준/교육산출물/02월/02_01
+
+-----------------------------------------
+목록 보기 자세히 -l 그리고 숨겨진 파일 목록보기 -a >> -la 또는 -al
+$ ls -la
+total 16
+drwxr-xr-x 1 TJ 197121    0 Feb  2 11:16 ./
+drwxr-xr-x 1 TJ 197121    0 Feb  2 09:38 ../
+drwxr-xr-x 1 TJ 197121    0 Feb  1 11:23 css/
+drwxr-xr-x 1 TJ 197121    0 Feb  1 11:15 icon/
+drwxr-xr-x 1 TJ 197121    0 Feb  1 11:16 img/
+-rw-r--r-- 1 TJ 197121 1979 Feb  1 16:38 index.html
+
+--------------------------------------
+
+화면지우기(청소)
+clear
+
+---------------------------------------
+버전관리 필수 사항
+깃 설정 : 깃허브에 접속하기 위한 환경설정(로그인정보 기록)
+---------------------------------------
+
+.git 폴더 생성
+
+
+$ git init [엔터]
+Initialized empty Git repository in D:/국기과정_최제준/교육산출물/02월/02_01/.git/
+
+------------------------------------------------
+깃 설정(폴더 .git) 확인
+
+$ ls -la
+total 24
+drwxr-xr-x 1 TJ 197121    0 Feb  2 11:25 ./
+drwxr-xr-x 1 TJ 197121    0 Feb  2 09:38 ../
+drwxr-xr-x 1 TJ 197121    0 Feb  2 11:25 .git/
+drwxr-xr-x 1 TJ 197121    0 Feb  1 11:23 css/
+drwxr-xr-x 1 TJ 197121    0 Feb  1 11:15 icon/
+drwxr-xr-x 1 TJ 197121    0 Feb  1 11:16 img/
+-rw-r--r-- 1 TJ 197121 1979 Feb  1 16:38 index.html
+-rw-r--r-- 1 TJ 197121  895 Feb  2 11:26 깃설정.txt
+
+
+---------------------------------------------------
+환경설정(configulation) config : 사용자(user) 이메일(email) 설정 'wpwns__@naver.com'
+
+$ git config user.email 'wpwns__@naver.com'
+
+---------------------------------------------------
+확인
+
+$ git config user.email 
+wpwns__@naver.com
+
+-----------------------------------------------------
+환경설정(configulation) config : 사용자(user) 이름(name) 설정 'chlwp11'
+
+$ git config user.name 'chlwp11'
+
+
+-----------------------------------------------------
+웹브라우저로 깃허브를 접속 github.com 로그인 
+리포지토리(Repositories) 원격접속(remote)할 add 리포지토리 선택
+
+
+그리고 리포지토리 주소 복사
+https://github.com/chlwp11/layout1.git  : origin
+
+git add . 
+git commit -m 'Upload'
+명령어 구문
+git remote add origin 리포지토리 주소 붙여넣기
+
+git remote add origin https://github.com/chlwp11/layout2.git
+
+git remote add origin https://github.com/chlwp11/wireframe2.git
+---------------------------------------------------
+깃 리포지토리 원격 접속
+
+$ git remote add origin https://github.com/chlwp11/layout1.git
+$ git remote add origin https://github.com/chlwp11/layout2.git
+$ git remote add origin https://github.com/chlwp11/layout3.git
+
+--------------------------------------------------------
+원격접속 확인
+
+$ git remote -v
+origin  https://github.com/chlwp11/layout1.git (fetch)
+origin  https://github.com/chlwp11/layout1.git (push)
+
+
+
+
+
+--------------------------------------
+업로드(push) 할 파일 선택하기(모두선택)
+
+1개의 파일 선택 업로드 추가(add) 선택(스테이징)
+
+$ git add index.html
+
+
+
+
+-----------------------------------------
+업로드할 파일을 커밋(commit)하게 
+수정내용 및 삭제, 추가등을 체크 확인 절차
+
+$ git commit -m 'Upload 2021-02-02'
+
+[master (root-commit) eef629d] Upload 2021-02-02
+ 12 files changed, 5251 insertions(+)
+ create mode 100644 css/reset.css
+ create mode 100644 css/style.css
+ create mode 100644 icon/font-awesome.css
+ create mode 100644 icon/fontawesome.js
+ create mode 100644 icon/fonts/FontAwesome.otf
+ create mode 100644 icon/fonts/fontawesome-webfont.eot
+ create mode 100644 icon/fonts/fontawesome-webfont.svg
+ create mode 100644 icon/fonts/fontawesome-webfont.ttf
+ create mode 100644 icon/fonts/fontawesome-webfont.woff
+ create mode 100644 icon/fonts/fontawesome-webfont.woff2
+ create mode 100644 index.html
+ create mode 100644 "/352/271/203/354/204/244/354/240/225.txt"
+
+
+-------------------------------------
+최종 업로드 하기
+
+$ git push origin master
+
+
+---------
+git add.
+
+-------
+git commit -m 'Update
+
+
+---------------
+업로드 후에 수정하고 다시 스테이징하고 커밋하고 푸쉬하기
+
+$ git add.
+
+$ git commit-m 'Update 2021-02-02 '
+
+$ git push origin master
+
+
+
+wireFrame
+---------------------------------------------------
+웹 페이지 주소
+
+https://chlwp11.github.io/layout1/
+https://chlwp11.github.io/layout2/
+https://chlwp11.github.io/layout3/.
+--------------------------------------------------------
+D:/국기과정_최제준/교육산출물/02월/02_01_와이어프레임1_혼자하기
+
+D:/국기과정_최제준/교육산출물/02월/02_01_와이어프레임4_과제
+
+D:/국기과정_최제준/교육산출물/02월/02_01_와이어프레임4_과제
+
+remote origin already exists. 오류 시 git remote rm origin 입력 후 다시 add 하면된다
